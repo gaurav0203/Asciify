@@ -6,7 +6,7 @@ from asciify import pillowImagePrintGray, pillowImagePrintColor, modifyContrastA
 
 
 def open_image_file_dialog():
-    file_path = filedialog.askopenfile(filetypes=[("Image files", "*jpg,*.jpeg *.png")])
+    file_path = filedialog.askopenfile(filetypes=[("Image files", "*jpg *.jpeg *.png")])
     if file_path:
         try:
             image = cv.imread(file_path.name)
